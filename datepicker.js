@@ -158,7 +158,7 @@ class DatePicker extends Component {
       return this.props.getDateStr(dateInstance);
     }
 
-    return Moment(dateInstance).format(format);
+    return Moment(dateInstance).add(543, "years").format(format);
   }
 
   datePicked() {
